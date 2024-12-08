@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bir Mehto</title>
+
+  <!-- - favicon -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!-- - custom css link -->
+
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- - google font link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- - #MAIN -->
+
+  <main>
+
+      <!-- - #SIDEBAR -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="Bir Mehto" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Bir Mehto">Bir Mehto</h1>
+
+          <p class="title">Flutter developer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:birmehto@gmail.com" class="contact-link">birmehto@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+917528940605" class="contact-link">+91 7528940605</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="2001-07-27">july 27, 2001</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Ahmedad, Gujrat, India</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://www.facebook.com/profile.php?id=100009076638475" target="_blank" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+        
+          <li class="social-item">
+            <a href="https://www.instagram.com/birmehto/" target="_blank" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+        
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/birmehto/" target="_blank" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+        
+          <li class="social-item">
+            <a href="https://github.com/birmehto" target="_blank" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+        
+        </ul>
+        
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!-- - #main-content -->
+
+    <div class="main-content">
+
+    <!-- - #NAVBAR -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+        <!-- - #ABOUT -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I'm a Flutter Developer from Gujarat, India, specializing in creating responsive and visually appealing
+            cross-platform applications.
+
+            I enjoy transforming complex ideas into seamless, interactive, and user-friendly mobile and web experiences.
+          </p>
+
+          <p>
+            My role is to develop apps that are not only functional and intuitive but also visually engaging. I focus on
+            writing clean, efficient code and ensuring a smooth user experience across devices. With a keen eye for
+            detail, I aim to deliver solutions that align with your vision and elevate your brand. I've contributed to
+            building feature-rich applications for various industries, helping businesses bring their ideas to life.
+          </p>
+        </section>
+
+
+          <!-- - service -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What I Do</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg" alt="UI/UX Design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">UI/UX Design</h4>
+
+                <p class="service-item-text">
+                  Crafting intuitive and visually appealing user interfaces to enhance the user experience.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="App Development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Cross-Platform App Development</h4>
+
+                <p class="service-item-text">
+                  Developing high-quality, responsive applications for Android, iOS, and web using Flutter.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="Performance Optimization icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Performance Optimization</h4>
+
+                <p class="service-item-text">
+                  Ensuring smooth performance and scalability of applications across platforms.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="App Maintenance icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">App Maintenance</h4>
+
+                <p class="service-item-text">
+                  Providing ongoing support and updates to keep your app running seamlessly.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!-- - testimonials -->
+
+        <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Testimonials</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-1.png" alt="John Doe" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>John Doe</h4>
+
+                <time class="testimonials-date" datetime="" data-testimonials-date></time>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Bir was hired to develop a cross-platform app using Flutter. We were very pleased with the work
+                    done.
+                    They have extensive experience and are very focused on delivering apps that are functional,
+                    user-friendly,
+                    and highly performant. Their attention to detail and understanding of the client’s needs made the
+                    whole
+                    process smooth and successful.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-2.png" alt="Alice Smith" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Alice Smith</h4>
+
+                <time class="testimonials-date" datetime="" data-testimonials-date></time>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Bir was hired to build a robust mobile app using Flutter. We are thrilled with the results. Bir’s
+                    deep
+                    understanding of Flutter and their ability to translate our requirements into a functional and
+                    polished app
+                    was impressive. Their professionalism and commitment to quality were evident in every phase of the
+                    project.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-3.png" alt="Michael Brown" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Michael Brown</h4>
+
+                <time class="testimonials-date" datetime="" data-testimonials-date></time>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Bir’s expertise in Flutter development helped us deliver a mobile app that exceeded our
+                    expectations.
+                    From the initial concept to the final product, they were always proactive in suggesting improvements
+                    and ensuring the app met all our requirements. Highly recommended for anyone looking to develop
+                    top-notch mobile applications.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-4.png" alt="Chris Johnson" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Chris Johnson</h4>
+
+                <time class="testimonials-date" datetime="" data-testimonials-date></time>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Bir was instrumental in building a dynamic and visually appealing Flutter app for our business.
+                    Their
+                    ability to turn ideas into an intuitive user experience was impressive. Bir's professionalism,
+                    communication
+                    skills, and dedication to delivering high-quality results made them a pleasure to work with.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+      <!-- - testimonials modal -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel Lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Daniel Lewis</h4>
+
+              <time class="testimonials-modal-date" datetime="" data-modal-title></time>
+
+              <div data-modal-text>
+                <p>
+                  Bir was hired to create a corporate identity. We were very pleased with the work done. She has a lot
+                  of experience
+                  and is very concerned about the needs of the client. Lorem ipsum dolor sit amet, ullamcous cididt
+                  consectetur adipiscing elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+
+      </article>
+
+
+      
+      <!-- - #RESUME -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <!-- Experience Section -->
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="briefcase-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Professional Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Flutter Developer | iPOP Solutions LLP</h4>
+              <span>2024 — Present</span>
+              <p class="timeline-text">
+                In my current role as a Flutter Developer at iPOP Solutions, I design and develop cross-platform
+                applications using Flutter. My focus is on delivering high-performance apps with intuitive user
+                interfaces and smooth user experiences. I work with Flutter's rich set of widgets, state management
+                tools, and APIs to build scalable applications for both mobile and web platforms. My role also involves
+                optimizing app performance, ensuring seamless integration with backend services, and adhering to best
+                practices for clean, maintainable code.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Flutter Developer | AARK INFOSOFT PVT LTD</h4>
+              <span>2023 — 2024</span>
+              <p class="timeline-text">
+                As a Flutter Developer at AARK INFOSOFT, I was responsible for developing and maintaining cross-platform
+                mobile applications for Android and iOS using Flutter, Kotlin, and Swift. I collaborated closely with
+                cross-functional teams to design and implement features, troubleshoot issues, and optimize performance
+                across both platforms. My expertise in Flutter allowed me to create reusable widgets and manage app
+                state efficiently using tools like Provider and Riverpod. I integrated third-party APIs and ensured
+                seamless app performance across various device configurations. Additionally, I was involved in the full
+                software development lifecycle, from initial concept and development to deployment and post-release
+                maintenance.
+              </p>
+            </li>
+          </ol>
+        </section>
+
+        <!-- Education Section -->
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Guru Nanak Dev University</h4>
+              <span>2013 — 2017</span>
+              <p class="timeline-text">
+                Bachelor of Computer Applications (BCA). Focused on mobile app development, software engineering, and IT fundamentals, with a strong foundation in algorithms, data structures, and programming languages.
+              </p>
+            </li>
+          </ol>          
+
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skill">
+          <h3 class="h3 skills-title">My Skills</h3>
+
+          <ul class="skills-list content-card">
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Flutter Development</h5>
+                <data value="85">85%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 85%;"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Dart Programming</h5>
+                <data value="80">80%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Mobile App Development (Android & iOS)</h5>
+                <data value="75">75%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 75%;"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">UI/UX Design</h5>
+                <data value="80">80%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+      </article>
+
+      <!-- - #PORTFOLIO -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+      
+        <section class="projects">
+      
+          <ul class="filter-list">
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+          </ul>
+      
+          <div class="filter-select-box">
+            <button class="filter-select" data-select>
+              <div class="select-value" data-select-value>Select category</div>
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+            </button>
+      
+            <ul class="select-list">
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+            </ul>
+          </div>
+      
+          <ul class="project-list">
+      
+            <li class="project-item active" data-filter-item data-category="flutter development">
+              <a href="https://play.google.com/store/apps/details?id=com.ipop.tracktide&hl=en" target="_blank">
+      
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/project-1.jpg" alt="Track Tide" loading="lazy">
+                </figure>
+      
+                <h3 class="project-title">Track Tide</h3>
+                <p class="project-category">Android Application</p>
+      
+              </a>
+            </li>
+      
+            <li class="project-item active" data-filter-item data-category="flutter development">
+              <a href="#">
+      
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/project-2.png" alt="Lotus Digital Media" loading="lazy">
+                </figure>
+      
+                <h3 class="project-title">Lotus Digital Media</h3>
+                <p class="project-category">Flutter Development</p>
+      
+              </a>
+            </li>
+          </ul>
+      
+        </section>
+      
+      </article>
+      
+
+      <!-- - #CONTACT -->
+   
+
+      <article class="contact" data-page="contact">
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+      
+        <!-- Map Section -->
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d72.5713657146956!3d23.022505596145845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e84e0cd64b3d5%3A0x7d5b0e9f4f23a003!2sVastrapur%2C%20Ahmedabad%2C%20Gujarat%2C%20India!5e0!3m2!1sen!2sin!4v1647608789441!5m2!1sen!2sin"
+              width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </figure>
+        </section>
+      
+        <!-- Contact Form Section -->
+        <section class="contact-form">
+          <h3 class="h3 form-title">Contact Form</h3>
+      
+          <form action="mailto:birmehto@gmail.com" method="post" enctype="text/plain">
+            <!-- Input Fields -->
+            <div class="input-wrapper">
+              <input
+                type="text"
+                name="from_name"
+                class="form-input"
+                placeholder="Your Name"
+                required
+              >
+              <input
+                type="email"
+                name="user_email"
+                class="form-input"
+                placeholder="Your Email Address"
+                required
+              >
+            </div>
+      
+            <!-- Message Field -->
+            <textarea
+              name="message"
+              class="form-input"
+              placeholder="Your Message"
+              required
+            ></textarea>
+      
+            <!-- Submit Button -->
+            <button class="form-btn" type="submit">
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+          </form>
+        </section>
+      </article>
+    </div>
+
+  </main>
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
