@@ -1,0 +1,3 @@
+# Portfolio
+
+This portfolio project serves as a central hub to showcase my software development journey. It features a curated selection of my key projects, highlighting both technical expertise and problem-solving abilities. The repository is designed for easy navigation, allowing visitors to explore my skills, tools, and frameworks used across various projects. Whether you're a potential collaborator, employer, or fellow developer, you'll find clear information about my experience and ways to connect. The goal is to provide a transparent and organized overview of my work, making it simple for anyone to learn more about my capabilities and achievements.
