@@ -1,0 +1,18 @@
+.footer {
+    padding: 3rem 0;
+    background: var(--background);
+    border-top: 1px solid var(--border);
+    text-align: center;
+}
+
+.text {
+    color: var(--foreground);
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.subtext {
+    color: var(--foreground);
+    opacity: 0.5;
+    font-size: 0.875rem;
+}

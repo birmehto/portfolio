@@ -1,28 +1,24 @@
 {
-  "name": "bir-mehto-portfolio",
-  "version": "2.0.0",
-  "description": "Modern portfolio website for Bir Mehto - Flutter Developer",
-  "main": "index.html",
+  "name": "temp_app",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "dev": "python3 -m http.server 8000",
-    "build": "echo 'Static site - no build process needed'",
-    "serve": "python3 -m http.server 8000 --directory .",
-    "lint:css": "echo 'CSS linting not configured'",
-    "lint:js": "echo 'JS linting not configured'"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint"
   },
-  "keywords": [
-    "portfolio",
-    "flutter",
-    "developer",
-    "responsive",
-    "modern"
-  ],
-  "author": "Bir Mehto <birmehto@gmail.com>",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/birmehto/portfolio"
+  "dependencies": {
+    "clsx": "^2.1.1",
+    "framer-motion": "^12.23.24",
+    "lucide-react": "^0.554.0",
+    "next": "16.0.4",
+    "next-themes": "^0.4.6",
+    "react": "19.2.0",
+    "react-dom": "19.2.0"
   },
-  "devDependencies": {},
-  "dependencies": {}
+  "devDependencies": {
+    "eslint": "^9",
+    "eslint-config-next": "16.0.4"
+  }
 }

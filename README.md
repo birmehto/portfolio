@@ -1,115 +1,36 @@
-# Bir Mehto - Portfolio Website
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-A modern, responsive portfolio website showcasing Flutter development skills and projects.
+## Getting Started
 
-## 🚀 Features
+First, run the development server:
 
-- **Responsive Design** - Works perfectly on all devices
-- **Modern Architecture** - Component-based structure with separated CSS
-- **Performance Optimized** - Fast loading with minimal dependencies
-- **Clean Code** - Well-organized, maintainable codebase
-- **Accessibility** - Semantic HTML and proper ARIA labels
-
-## 🛠️ Tech Stack
-
-- **HTML5** - Semantic markup
-- **CSS3** - Modern styling with custom properties
-- **Vanilla JavaScript** - No frameworks, pure JS
-- **Component Architecture** - Modular HTML components
-- **Mobile-First** - Responsive design approach
-
-## 📁 Project Structure
-
-```
-├── index.html                    # Main entry point
-├── src/                         # Source directory
-│   ├── components/              # HTML Components
-│   ├── styles/                  # Separated CSS files
-│   ├── scripts/                 # JavaScript modules
-│   └── assets/                  # Images and icons
-├── package.json                 # Project configuration
-├── README.md                    # Project documentation
-└── STRUCTURE.md                 # Detailed architecture docs
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
 ```
 
-## 🚀 Quick Start
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/birmehto/portfolio.git
-   cd portfolio
-   ```
+You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
-2. **Start development server**
-   ```bash
-   npm run dev
-   # or
-   python3 -m http.server 8000
-   ```
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-3. **Open in browser**
-   ```
-   http://localhost:8000
-   ```
+## Learn More
 
-## 📱 Sections
+To learn more about Next.js, take a look at the following resources:
 
-- **About** - Personal introduction and services offered
-- **Resume** - Professional experience and skills
-- **Portfolio** - Showcase of Flutter projects with live links
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-## 🎨 Customization
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-### Updating Content
-- **Personal Info**: Edit `src/components/sidebar.html`
-- **About Section**: Edit `src/components/about.html`
-- **Experience**: Edit `src/components/resume.html`
-- **Projects**: Edit `src/components/portfolio.html`
+## Deploy on Vercel
 
-### Styling
-- **Colors & Theme**: Edit `src/styles/variables.css`
-- **Component Styles**: Edit respective files in `src/styles/components/`
-- **Responsive Design**: Edit `src/styles/responsive.css`
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-### Adding New Sections
-1. Create HTML component in `src/components/`
-2. Create CSS file in `src/styles/components/`
-3. Import CSS in `src/styles/main.css`
-4. Add to component loader in `src/scripts/component-loader.js`
-
-## 📊 Performance
-
-- **Lighthouse Score**: 95+ (Performance, Accessibility, Best Practices, SEO)
-- **Load Time**: < 2 seconds on 3G
-- **Bundle Size**: < 100KB total
-- **No External Dependencies**: Pure vanilla implementation
-
-## 🌐 Browser Support
-
-- Chrome 60+
-- Firefox 55+
-- Safari 12+
-- Edge 79+
-
-## 📄 License
-
-MIT License - feel free to use this template for your own portfolio!
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-## 📞 Contact
-
-**Bir Mehto**
-- Email: birmehto@gmail.com
-- LinkedIn: [linkedin.com/in/birmehto](https://www.linkedin.com/in/birmehto/)
-- GitHub: [github.com/birmehto](https://github.com/birmehto)
-
----
-
-⭐ Star this repo if you found it helpful!
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
