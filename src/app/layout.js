@@ -18,12 +18,12 @@ export const metadata = {
   description: "Modern portfolio of Bir Mehto - Flutter Developer",
 };
 
-import Providers from "@/components/Providers";
+import Providers from "@/components/providers/Providers";
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${inter.variable} ${outfit.variable}`} suppressHydrationWarning>
-      <body>
+      <body suppressHydrationWarning>
         <Providers>{children}</Providers>
       </body>
     </html>

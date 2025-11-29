@@ -6,7 +6,7 @@ import { Sun, Moon } from "lucide-react";
 import styles from "./ThemeToggle.module.css";
 
 export default function ThemeToggle() {
-    const { theme, setTheme } = useTheme();
+    const { theme, setTheme, resolvedTheme } = useTheme();
     const [mounted, setMounted] = useState(false);
 
     useEffect(() => {
@@ -18,10 +18,10 @@ export default function ThemeToggle() {
     return (
         <button
             className={styles.toggle}
-            onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+            onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
             aria-label="Toggle theme"
         >
-            {theme === "dark" ? <Sun size={20} /> : <Moon size={20} />}
+            {resolvedTheme === "dark" ? <Sun size={20} /> : <Moon size={20} />}
         </button>
     );
 }

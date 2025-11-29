@@ -24,12 +24,9 @@
     }
 }
 
-@media (prefers-color-scheme: dark) {
-    @supports (backdrop-filter: blur(10px)) {
-        .scrolled {
-            background: rgba(10, 10, 10, 0.8);
-        }
-    }
+/* Dark mode support using global class */
+:global(.dark) .scrolled {
+    background: rgba(10, 10, 10, 0.8);
 }
 
 .inner {

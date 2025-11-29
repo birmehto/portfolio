@@ -3,7 +3,8 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
-import ThemeToggle from "./ThemeToggle";
+import Link from "next/link";
+import ThemeToggle from "../ui/ThemeToggle";
 import styles from "./Navbar.module.css";
 
 export default function Navbar() {
@@ -27,12 +28,12 @@ export default function Navbar() {
         >
             <div className="container">
                 <div className={styles.inner}>
-                    <a href="#" className={styles.logo}>
+                    <Link href="/" className={styles.logo}>
                         Bir<span className={styles.dot}>.</span>
-                    </a>
+                    </Link>
 
                     <div className={`${styles.links} ${isOpen ? styles.open : ""}`}>
-                        <a href="#projects" onClick={() => setIsOpen(false)}>Projects</a>
+                        <Link href="/projects" onClick={() => setIsOpen(false)}>Projects</Link>
                         <a href="#skills" onClick={() => setIsOpen(false)}>Skills</a>
                         <ThemeToggle />
                     </div>

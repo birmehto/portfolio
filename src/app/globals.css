@@ -22,21 +22,20 @@
   --font-heading: var(--font-outfit);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    /* Dark Theme */
-    --background: #0a0a0a;
-    --foreground: #ededed;
-    --surface: #171717;
-    --surface-hover: #262626;
-    --border: #262626;
+[data-theme='dark'],
+.dark {
+  /* Dark Theme */
+  --background: #0a0a0a;
+  --foreground: #ededed;
+  --surface: #171717;
+  --surface-hover: #262626;
+  --border: #262626;
 
-    --primary: #818cf8;
-    /* Indigo 400 */
-    --primary-foreground: #ffffff;
-    --secondary: #a78bfa;
-    /* Violet 400 */
-  }
+  --primary: #818cf8;
+  /* Indigo 400 */
+  --primary-foreground: #ffffff;
+  --secondary: #a78bfa;
+  /* Violet 400 */
 }
 
 * {

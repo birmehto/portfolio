@@ -1,8 +1,8 @@
-import Navbar from "@/components/Navbar";
-import Hero from "@/components/Hero";
-import Projects from "@/components/Projects";
-import Skills from "@/components/Skills";
-import Footer from "@/components/Footer";
+import Navbar from "@/components/layout/Navbar";
+import Hero from "@/components/sections/Hero";
+
+import Skills from "@/components/sections/Skills";
+import Footer from "@/components/layout/Footer";
 import styles from "./page.module.css";
 
 export default function Home() {
@@ -10,7 +10,6 @@ export default function Home() {
     <main className={styles.main}>
       <Navbar />
       <Hero />
-      <Projects />
       <Skills />
       <Footer />
     </main>

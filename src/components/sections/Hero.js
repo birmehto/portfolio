@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { ArrowRight, Github, Linkedin, Mail } from "lucide-react";
+import Link from "next/link";
 import styles from "./Hero.module.css";
 
 export default function Hero() {
@@ -57,9 +58,9 @@ export default function Hero() {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.6 }}
                     >
-                        <a href="#projects" className={styles.primaryBtn}>
+                        <Link href="/projects" className={styles.primaryBtn}>
                             View Projects <ArrowRight size={20} />
-                        </a>
+                        </Link>
                     </motion.div>
 
                     <motion.div
