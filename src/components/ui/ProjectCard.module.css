@@ -1,0 +1,104 @@
+.card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.card:hover {
+    box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.5);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.imageWrapper {
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+}
+
+.projectImage {
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.card:hover .projectImage {
+    transform: scale(1.05);
+}
+
+.placeholderImage {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.placeholderText {
+    font-size: 4rem;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.1);
+}
+
+.cardContent {
+    padding: 1.25rem;
+}
+
+.projectTitle {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--foreground);
+}
+
+.projectDescription {
+    font-size: 0.9rem;
+    color: var(--foreground);
+    opacity: 0.7;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.tag {
+    font-size: 0.75rem;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--foreground);
+    opacity: 0.7;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.links {
+    display: flex;
+    gap: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    color: var(--foreground);
+    opacity: 0.7;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+.link:hover {
+    color: var(--primary);
+    opacity: 1;
+}

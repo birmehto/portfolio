@@ -1,29 +1,22 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import Link from "next/link";
 import ThemeToggle from "../ui/ThemeToggle";
+import { useScrolled } from "@/lib/hooks/useScrolled";
+import { slideDown } from "@/lib/utils/animations";
 import styles from "./Navbar.module.css";
 
 export default function Navbar() {
-    const [scrolled, setScrolled] = useState(false);
+    const scrolled = useScrolled(50);
     const [isOpen, setIsOpen] = useState(false);
-
-    useEffect(() => {
-        const handleScroll = () => {
-            setScrolled(window.scrollY > 50);
-        };
-        window.addEventListener("scroll", handleScroll);
-        return () => window.removeEventListener("scroll", handleScroll);
-    }, []);
 
     return (
         <motion.nav
             className={`${styles.navbar} ${scrolled ? styles.scrolled : ""}`}
-            initial={{ y: -100 }}
-            animate={{ y: 0 }}
+            {...slideDown}
             transition={{ duration: 0.5 }}
         >
             <div className="container">
