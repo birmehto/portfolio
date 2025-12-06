@@ -14,8 +14,28 @@ const outfit = Outfit({
 });
 
 export const metadata = {
-  title: "Bir Mehto | Portfolio",
-  description: "Modern portfolio of Bir Mehto - Flutter Developer",
+  title: {
+    default: "Bir Mehto | Portfolio",
+    template: "%s | Bir Mehto"
+  },
+  description: "Modern portfolio of Bir Mehto - Flutter Developer specializing in mobile app development.",
+  keywords: ["Bir Mehto", "Flutter Developer", "Mobile App Developer", "Portfolio", "React", "Next.js"],
+  authors: [{ name: "Bir Mehto" }],
+  creator: "Bir Mehto",
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://birmehto.dev",
+    title: "Bir Mehto | Portfolio",
+    description: "Modern portfolio of Bir Mehto - Flutter Developer",
+    siteName: "Bir Mehto Portfolio",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Bir Mehto | Portfolio",
+    description: "Modern portfolio of Bir Mehto - Flutter Developer",
+    creator: "@birmehto",
+  },
 };
 
 import Providers from "@/components/providers/Providers";

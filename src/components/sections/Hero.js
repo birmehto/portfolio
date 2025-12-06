@@ -22,7 +22,7 @@ export default function Hero() {
                     className={styles.content}
                 >
                     <motion.span className={styles.greeting} {...animateUp(0.2)}>
-                        Hi, I'm
+                        Hi, I&apos;m
                     </motion.span>
 
                     <motion.h1 className={styles.title} {...animateUp(0.3)}>
