@@ -3,10 +3,10 @@
 import { motion } from "framer-motion";
 import { ArrowLeft } from "lucide-react";
 import Link from "next/link";
-import Navbar from "@/components/layout/Navbar";
-import Footer from "@/components/layout/Footer";
-import ProjectCard from "@/components/ui/ProjectCard";
-import { PROJECTS } from "@/lib/constants/projects";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
+import ProjectCard from "@/components/ProjectCard";
+import { PROJECTS } from "@/lib/constants";
 import styles from "./page.module.css";
 
 export default function ProjectsPage() {

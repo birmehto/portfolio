@@ -1,7 +1,7 @@
-import Navbar from "@/components/layout/Navbar";
-import Hero from "@/components/sections/Hero";
-import Skills from "@/components/sections/Skills";
-import Footer from "@/components/layout/Footer";
+import Navbar from "@/components/Navbar";
+import Hero from "@/components/Hero";
+import Skills from "@/components/Skills";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (

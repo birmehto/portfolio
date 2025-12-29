@@ -1,8 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { SKILL_CATEGORIES } from "@/lib/constants/skills";
-import { fadeUp } from "@/lib/utils/animations";
+import { SKILL_CATEGORIES } from "@/lib/constants";
+import { fadeUp } from "@/lib/animations";
 import styles from "./Skills.module.css";
 
 function SkillProgress({ skill, index }) {
@@ -15,7 +15,10 @@ function SkillProgress({ skill, index }) {
             whileInView="enter"
             viewport={{ once: true }}
         >
-            <div className={styles.skillName}>{skill.name}</div>
+            <div className={styles.skillInfo}>
+                <span className={styles.skillName}>{skill.name}</span>
+                <span className={styles.skillPercentage}>{skill.level}%</span>
+            </div>
 
             <div className={styles.progressBar}>
                 <motion.div
@@ -23,8 +26,14 @@ function SkillProgress({ skill, index }) {
                     initial={{ width: 0 }}
                     whileInView={{ width: `${skill.level}%` }}
                     viewport={{ once: true }}
-                    transition={{ duration: 1, delay: 0.4 + index * 0.1 }}
-                />
+                    transition={{
+                        duration: 1.5,
+                        delay: 0.2 + index * 0.1,
+                        ease: [0.16, 1, 0.3, 1]
+                    }}
+                >
+                    <div className={styles.progressGlow} />
+                </motion.div>
             </div>
         </motion.div>
     );
@@ -59,10 +68,12 @@ export default function Skills() {
                                 initial="initial"
                                 whileInView="enter"
                                 viewport={{ once: true }}
+                                whileHover={{ y: -8, transition: { duration: 0.3 } }}
                             >
+                                <div className={styles.cardGlow} />
                                 <div className={styles.cardHeader}>
                                     <div className={styles.iconWrapper}>
-                                        <Icon size={24} />
+                                        <Icon size={24} strokeWidth={2.5} />
                                     </div>
                                     <h3 className={styles.categoryTitle}>{cat.title}</h3>
                                 </div>

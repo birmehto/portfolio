@@ -4,9 +4,9 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import Link from "next/link";
-import ThemeToggle from "../ui/ThemeToggle";
-import { useScrolled } from "@/lib/hooks/useScrolled";
-import { slideDown } from "@/lib/utils/animations";
+import ThemeToggle from "./ThemeToggle";
+import { useScrolled } from "@/lib/useScrolled";
+import { slideDown } from "@/lib/animations";
 import styles from "./Navbar.module.css";
 
 export default function Navbar() {
@@ -27,7 +27,7 @@ export default function Navbar() {
 
                     <div className={`${styles.links} ${isOpen ? styles.open : ""}`}>
                         <Link href="/projects" onClick={() => setIsOpen(false)}>Projects</Link>
-                        <a href="#skills" onClick={() => setIsOpen(false)}>Skills</a>
+                        <Link href="/#skills" onClick={() => setIsOpen(false)}>Skills</Link>
                         <ThemeToggle />
                     </div>
 
